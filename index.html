@@ -159,18 +159,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            <strong>Purpose</strong> The recognition of surgical instrument-tissue interactions can enhance the surgical workflow analysis, improve automated safety systems and enable skill assessment in minimally invasive surgery.
-            However, current deep learning methods for surgical instrument-tissue interaction recognition often rely on static images or coarse temporal sampling, limiting their ability to capture rapid surgical dynamics.
-            In order to enhance surgical instrument-tissue interaction recognition, the influence of the temporal context provided to the deep learning models should be systematically investigated.
+            <strong>Purpose</strong> The recognition of surgical instrument-tissue interactions can enhance the surgical workflow analysis, improve automated safety systems and enable skill assessment in minimally invasive surgery. 
+            However, current deep learning methods for surgical instrument-tissue interaction recognition often rely on static images or coarse temporal sampling, limiting their ability to capture rapid surgical dynamics. 
+            Therefore, this study systematically investigates the impact of incorporating fine-grained temporal context into deep learning models for interaction recognition.
             <br>
-            <strong>Methods</strong> We conduct extensive experiments with multiple curated video-based datasets to investigate the influence of fine-grained temporal context for the task of instrument-tissue interaction recognition using state-of-the-art video transformer.
-            Additionally, we propose a Multi-Task-Attention Module (MTAM) that utilizes cross-attention and a gating mechanism to improve communication between the subtasks of identifying the surgical instrument, atomic action, and anatomical target.
+            <strong>Methods</strong> We conduct extensive experiments with multiple curated video-based datasets to investigate the influence of fine-grained temporal context for the task of instrument-tissue interaction recognition using video transformer with spatio-temporal feature extraction capabilities. 
+            Additionally, we propose a multi-task-attention module that utilizes cross-attention and a gating mechanism to improve communication between the subtasks of identifying the surgical instrument, atomic action, and anatomical target.
             <br>
-            <strong>Results</strong> Our study demonstrates the benefit of a fine-grained temporal context for the recognition of instrument-tissue interactions, with an optimal sampling rate of 6-8 Hz identified for the examined datasets.
-            Furthermore, our proposed MTAM significantly outperformes a state-of-the-art multi-task video transformer on the CholecT45 and GraSP datasets, achieving relative increases of 4.8% and 5.9% in surgical instrument-tissue interaction recognition, respectively.
+            <strong>Results</strong> Our study demonstrates the benefit of utilizing the fine-grained temporal context for recognition of instrument-tissue interactions, with an optimal sampling rate of 6-8 Hz identified for the examined datasets. 
+            Furthermore, our proposed MTAM significantly outperforms state-of-the-art multi-task video transformer on the CholecT45-Vid and GraSP-Vid datasets, achieving relative increases of 4.8% and 5.9% in surgical instrument-tissue interaction recognition, respectively.
             <br>
-            <strong>Conclusion</strong> In this work, we demonstrate the benefits of using a fine-grained temporal context rather than static images or coarse temporal context for the task of surgical instrument-tissue interaction recognition.
-            We also show that leveraging communication between different subtasks in multi-task learning improves overall surgical instrument-tissue interaction recognition performance.
+            <strong>Conclusion</strong> In this work, we demonstrate the benefits of using a fine-grained temporal context rather than static images or coarse temporal context for the task of surgical instrument-tissue interaction recognition. 
+            We also show that leveraging cross-attention with spatio-temporal features from various subtasks leads to improved surgical instrument-tissue interaction recognition performance.
           </p>
         </div>
       </div>
